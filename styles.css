@@ -1,0 +1,14 @@
+table {
+    border:2px, double, black;
+    width: 50%;
+    justify-self:center;
+}
+
+td, th{
+    border: 2px double black; 
+    border-collapse: collapse;
+}
+
+:root{
+    background-color: lightgreen;
+}
