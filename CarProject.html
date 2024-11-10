@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership Menu</title>
+    <style>
+        /* Page styling */
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Center tables */
+        .table-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        /* Styling for car table */
+        #car-table {
+            border-collapse: collapse;
+            border: 3px solid green;
+            width: 400px;
+            margin: auto;
+        }
+
+        /* Styling for motorbike table */
+        #motorbike-table {
+            border-collapse: collapse;
+            border: 10px double red;
+            width: 400px;
+            margin: auto;
+        }
+
+        /* General table styling */
+        table th, table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Header row styling */
+        th {
+            background-color: #cccccc;
+            font-size: 1.2em;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Form styling */
+        form {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e0f7fa;
+            border-radius: 8px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0px 0px 10px #888;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Car Dealership Menu</h1>
+
+    <div class="table-container">
+        <!-- Car Table -->
+        <table id="car-table">
+            <tr>
+                <th colspan="7">Cars</th>
+            </tr>
+            <tr>
+                <th>Model</th>
+                <th>Brand</th>
+                <th>Year</th>
+                <th>Version</th>
+                <th>Engine Type</th>
+                <th>Fuel Capacity</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Model S</td>
+                <td>Tesla</td>
+                <td>2023</td>
+                <td>Performance</td>
+                <td>Electric</td>
+                <td>100 kWh</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Mustang</td>
+                <td>Ford</td>
+                <td>2021</td>
+                <td>GT</td>
+                <td>V8</td>
+                <td>15 gal</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Civic</td>
+                <td>Honda</td>
+                <td>2022</td>
+                <td>EX</td>
+                <td>I4</td>
+                <td>12 gal</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Corolla</td>
+                <td>Toyota</td>
+                <td>2020</td>
+                <td>LE</td>
+                <td>I4</td>
+                <td>13 gal</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Model 3</td>
+                <td>Tesla</td>
+                <td>2023</td>
+                <td>Standard</td>
+                <td>Electric</td>
+                <td>75 kWh</td>
+                <td>20</td>
+            </tr>
+        </table>
+
+        <!-- Motorbike Table -->
+        <table id="motorbike-table">
+            <tr>
+                <th colspan="7">Motorbikes</th>
+            </tr>
+            <tr>
+                <th>Model</th>
+                <th>Brand</th>
+                <th>Year</th>
+                <th>Version</th>
+                <th>Engine Type</th>
+                <th>Fuel Capacity</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Ninja ZX-6R</td>
+                <td>Kawasaki</td>
+                <td>2022</td>
+                <td>Standard</td>
+                <td>600cc</td>
+                <td>4.5 gal</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>CBR500R</td>
+                <td>Honda</td>
+                <td>2021</td>
+                <td>Sport</td>
+                <td>500cc</td>
+                <td>4.6 gal</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>MT-07</td>
+                <td>Yamaha</td>
+                <td>2023</td>
+                <td>Standard</td>
+                <td>689cc</td>
+                <td>3.7 gal</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Bonneville T120</td>
+                <td>Triumph</td>
+                <td>2020</td>
+                <td>Classic</td>
+                <td>1200cc</td>
+                <td>3.8 gal</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Streetfighter V4</td>
+                <td>Ducati</td>
+                <td>2023</td>
+                <td>Standard</td>
+                <td>1103cc</td>
+                <td>4.2 gal</td>
+                <td>7</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- User Information Form -->
+    <form>
+        <h2>User Information Form</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        
+        <label for="credit-score">Credit Score:</label>
+        <input type="number" id="credit-score" name="credit-score" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        
+        <label for="initial-payment">Initial Payment:</label>
+        <input type="number" id="initial-payment" name="initial-payment">
+        
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
